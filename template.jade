@@ -1,0 +1,14 @@
+doctype html
+html
+  block vars
+  include ./includes/head.jade
+  body
+    .bodyWrapper
+      include ./includes/pageHeader.jade
+        
+      .contentWrapper
+        block content
+        
+      include ./includes/pageFooter.jade
+    include ./includes/scripts.jade
+      

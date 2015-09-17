@@ -6,8 +6,9 @@ block vars
   - var pageTitle = "Page TITLE!!!"
   - var learningOutcomes = "These are the learning outcomes for this page"
   
-  - var checklistItems = ['Hello', 'There', 'How', 'Are', 'You?'];
+  - var checklistItems = ['Hello', 'There', 'How', 'Are', 'You????'];
 
 block content
   p this is where the content will go
-  include ./includes/checklist.jade
+  +checklist-default(checklistItems)
+  +checklist-tick-and-cross(checklistItems)

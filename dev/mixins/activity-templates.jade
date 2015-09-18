@@ -1,0 +1,31 @@
+mixin checklist-default(items)
+
+  .activity.checklist#checklist-default
+      .nav
+        button.next next
+        button.restart BOOM!
+      .items
+        each item in items
+          .item 
+            p #{item}
+            
+mixin checklist-tick-cross(items)
+
+  .activity.checklist#checklist-tick-cross
+      .nav
+        button.next next
+        button.restart BOOM YEAH!
+      .items
+        each item in items
+          .item 
+            p #{item.text}
+            .buttons
+              button.icon-tick
+              button.icon-cross
+            .itemFeedback
+              .fb-tick
+              p #{item.tick}
+            .itemFeedback
+              .fb-cross
+              p #{item.cross}
+              

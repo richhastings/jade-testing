@@ -1,0 +1,27 @@
+{
+  "name": "jade-testing",
+  "version": "1.0.0",
+  "description": "Testing out mode, styles and jade",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.52.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://richhastings@github.com/richhastings/jade-testing.git"
+  },
+  "author": "Rich Hastings <rich.hastings@me.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richhastings/jade-testing/issues"
+  },
+  "homepage": "https://github.com/richhastings/jade-testing"
+}

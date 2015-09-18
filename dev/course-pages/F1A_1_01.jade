@@ -1,0 +1,15 @@
+extends ../includes/template
+
+block vars
+  - var progTitle = "Programme Title"
+  - var unitTitle = "Unit title"
+  - var pageTitle = "Page TITLE!!!"
+  - var learningOutcomes = "These are the learning outcomes for this page"
+  
+  - var data = ['Hello', 'There', 'How', 'Are', 'You????', 'MATE'];
+  - var datatwo = [{text:'One', tick:'Tick TEXT', cross:'CROSS TEXTTTT'},{text:'TWOOO', tick:'tickety tick', cross: 'NO NO NO'},{text:'33333', tick:'yeah!', cross:'no way man!'}]
+
+block content
+  p this is where the content will go
+  +checklist-default(data)
+  +checklist-tick-cross(datatwo)

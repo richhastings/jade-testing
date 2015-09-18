@@ -6,4 +6,10 @@ $(document).ready(function(){
     $('#checklist-default').checklist();
   }
 
+  if($('#checklist-tick-cross').length > 0) {
+    $('#checklist-tick-cross').checklist({
+      type: 'tickandcross'
+    });
+  }
+
 });
